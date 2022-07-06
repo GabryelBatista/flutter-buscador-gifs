@@ -42,8 +42,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Image.network(
-            'https://developers.giphy.com/static/img/dev-logo-lg.gif'),
+        title: Image.asset(
+            'assets/header-logo-0fec0225d189bc0eae27dac3e3770582.gif'),
         centerTitle: true,
       ),
       backgroundColor: Colors.black,
@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.all(10.0),
             child: TextField(
               decoration: const InputDecoration(
-                labelText: 'Pesquise Aqui!',
+                labelText: 'Search here!',
                 labelStyle: TextStyle(color: Colors.white),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.white),
@@ -143,7 +143,7 @@ class _HomePageState extends State<HomePage> {
                     children: const [
                       Icon(Icons.add, color: Colors.white, size: 70.0),
                       Text(
-                        'Carregar mais ...',
+                        'Load more ...',
                         style:
                             TextStyle(color: Colors.white, fontSize: 22.0),
                       )
